@@ -99,7 +99,7 @@ public class CarHealthData implements MetadataValue {
 		if(m == null || !m.isValid() || m.isDead()){
 			return;
 		}
-		Bukkit.getPluginManager().callEvent(new ucarDeathEvent(m, whoHurt));
+		Bukkit.getPluginManager().callEvent(new UCarsDeathEvent(m, whoHurt));
 		return;
 	}
 
@@ -107,7 +107,7 @@ public class CarHealthData implements MetadataValue {
 		if(carEntity == null || !carEntity.isValid() || carEntity.isDead()){
 			return;
 		}
-		Bukkit.getPluginManager().callEvent(new ucarDeathEvent(carEntity));
+		Bukkit.getPluginManager().callEvent(new UCarsDeathEvent(carEntity));
 		return;
 	}
 }

@@ -1,8 +1,9 @@
 name: uCars
-main: com.useful.ucars.ucars
-version: 20
+main: com.useful.ucars.UCars
+version: 21-Dev
 softdepend: [Vault]
 depend: [ProtocolLib]
+api-version: 1.21
 commands:
    ucars:
         description: This gives ucars info

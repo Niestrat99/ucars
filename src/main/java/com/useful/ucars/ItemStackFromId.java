@@ -11,7 +11,7 @@ public class ItemStackFromId {
 		String m = parts[0];
 		Material mat = Material.getMaterial(m);
 		if(mat == null){
-			ucars.plugin.getLogger().info("[WARNING] Invalid config value: "+raw+" ("+m+")");
+			UCars.plugin.getLogger().info("[WARNING] Invalid config value: "+raw+" ("+m+")");
 			return new ItemStack(Material.STONE);
 		}
 		short data = 0;

@@ -14,7 +14,7 @@ import java.util.UUID;
  * @author storm345
  *
  */
-public class uCarRespawnEvent extends Event implements Cancellable {
+public class UCarsRespawnEvent extends Event implements Cancellable {
 	private Entity newCar;
 	private UUID oldId;
 	private UUID newId;
@@ -31,7 +31,7 @@ public class uCarRespawnEvent extends Event implements Cancellable {
 	 * @param oldId The UUID of the old Car entity.
 	 * @param newId The UUID of the new Car entity.
 	 */
-	public uCarRespawnEvent(Entity newCar, UUID oldId, UUID newId, CarRespawnReason reason) {
+	public UCarsRespawnEvent(Entity newCar, UUID oldId, UUID newId, CarRespawnReason reason) {
 		this.newCar = newCar;
 		this.oldId = oldId;
 		this.newId = newId;

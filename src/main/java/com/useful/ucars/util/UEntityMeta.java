@@ -13,7 +13,7 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.metadata.MetadataValue;
 
-import com.useful.ucars.ucars;
+import com.useful.ucars.UCars;
 
 public class UEntityMeta {
 	
@@ -21,7 +21,7 @@ public class UEntityMeta {
 	private static volatile Map<UUID, WeakReference<Entity>> entityObjs = new ConcurrentHashMap<UUID, WeakReference<Entity>>(100, 0.75f, 2);
 	
 	public static void cleanEntityObjs(){
-		Bukkit.getScheduler().runTaskTimerAsynchronously(ucars.plugin, new Runnable(){
+		Bukkit.getScheduler().runTaskTimerAsynchronously(UCars.plugin, new Runnable(){
 
 			@Override
 			public void run() {
